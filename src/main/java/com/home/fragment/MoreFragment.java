@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.bizhidemo.R;
+
 /**
  * Created by Schuman on 2016/6/2.
  */
@@ -16,7 +18,7 @@ public class MoreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         //将返回值修改，加载fragment_more的布局
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return inflater.inflate(R.layout.fragment_more,null);
     }
 
     //重写onViewCreated方法
@@ -25,6 +27,8 @@ public class MoreFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         //通过ButterKnife初始化控件
+
+
 
         //修改控件上的文字
     }

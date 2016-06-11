@@ -5,11 +5,62 @@
     android:layout_height="match_parent"
     tools:context="com.example.bizhidemo.MainActivity">
 
-
     <!--处理页面布局-->
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radiogroup">
+    </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/btn_recom"
+            android:tag="0"
+            style="@style/radiobuttonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/recom_item"
+            android:text="推荐"/>
+
+
+
+        <RadioButton
+            android:id="@+id/btn_type"
+            android:tag="1"
+            style="@style/radiobuttonStyle"
+            android:drawableTop="@drawable/type_item"
+            android:text="分类"/>
+
+
+
+        <RadioButton
+            android:id="@+id/btn_search"
+            android:tag="2"
+            style="@style/radiobuttonStyle"
+            android:drawableTop="@drawable/search_item"
+            android:text="搜索"/>
+
+
+
+        <RadioButton
+            android:id="@+id/btn_more"
+            android:tag="3"
+            style="@style/radiobuttonStyle"
+            android:drawableTop="@drawable/more_item"
+            android:text="更多"/>
+
+
+
+
+    </RadioGroup>
+
+
+
 </RelativeLayout>
